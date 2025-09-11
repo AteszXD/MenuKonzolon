@@ -44,7 +44,7 @@ namespace MenuKonzolon
                 } else if (valasz == "2")
                 {
                     Console.WriteLine($"A neve: {nev}\n" +
-                        $"A neme: {ferfi}\n" +
+                        $"A neme: {(ferfi ? "Férfi" : "Nő")}\n" +
                         $"A születési éve: {szulEv}");
 
                     Console.WriteLine("Enterre tovább....");
@@ -52,6 +52,7 @@ namespace MenuKonzolon
 
                 } else if (valasz == "3")
                 {
+                    Console.Beep();
                     Console.WriteLine("Biztosan ki szeretne lépni? (Igen/Nem): ");
                     valasz = Console.ReadLine() != "Igen" ? " " : "3";
                 }
