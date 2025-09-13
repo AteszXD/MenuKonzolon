@@ -14,6 +14,8 @@ namespace MenuKonzolon
             bool ferfi = true;
             int szulEv = 0;
             string valasz = "";
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
             do
             {
                 Console.Clear();
